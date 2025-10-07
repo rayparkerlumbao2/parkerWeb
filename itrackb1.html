@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="design.css">
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+  <div class="nav-wrap">
+    <div class="brand">
+      <div class="logo">RP</div>
+      <div>
+        <div style="font-weight:800">Ray Parker</div>
+        <div class="small">ITRACKB1 PROJECT</div>
+      </div>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#contact" class="cta">Contact</a></li>
+      </ul>
+    </nav>
+
+    <button class="hamburger" aria-label="open menu">☰</button>
+  </div>
+</header>
+
+<main>
+  <section id="home" class="hero">
+    <div class="container hero-grid">
+      <div>
+        <div class="section-title"><h2 style="font-size:14px;color:var(--accent);margin:0">Hey there — I build things</h2></div>
+        <h1>I'm <span style="background:linear-gradient(90deg,var(--accent),var(--accent-2));-webkit-background-clip:text;color:transparent">Ray Parker</span> — student from CICT</h1>
+        <p class="muted">This is my Portfolio Website Project to be submitted to Ma'am Abegail Delluza Guerrero.</p>
+        <div class="actions">
+          <a href="#portfolio" class="cta">View Portfolio</a>
+          <a href="#contact" class="chip">Hire me</a>
+        </div>
+
+        <div style="margin-top:22px;display:flex;gap:12px;flex-wrap:wrap">
+          <div class="badge">Available for freelance</div>
+          <div class="small">Based in: Philippines</div>
+        </div>
+
+      </div>
+
+      <aside class="profile-card">
+        <div class="avatar">
+          <img src="prkr.jpg" style="width: 100%; height: 100%; overflow: hidden; border-radius: 12px;" alt="">
+        </div>
+        <div style="margin-top:12px">
+          <div style="display:flex;justify-content:space-between;align-items:center">
+            <div>
+              <div style="font-weight:800">Ray Parker Lumbao</div>
+              <div class="small">BSINFOTECH 2B</div>
+            </div>
+            <div class="small">⭐ 4.9</div>
+          </div>
+
+          <p class="muted" style="margin-top:8px">Studying in Catanduanes State University, from College of Information and Communication Technology.</p>
+
+          <div style="margin-top:12px;display:flex;gap:8px">
+            <a class="chip">Passed</a>
+            <a class="chip">Failed</a>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section id="portfolio">
+    <div class="container">
+      <div class="section-title"><h2>Portfolio</h2><div class="space"></div><div class="small muted">Selected projects</div></div>
+      <div class="filters">
+        <div class="chip" data-filter="all">All</div>
+        <div class="chip" data-filter="games">Games</div>
+        <div class="chip" data-filter="hobbies">Hobbies</div>
+        <div class="chip" data-filter="branding">Branding</div>
+      </div>
+
+      <div class="grid" id="projects">
+        
+        <div class="card" data-tags="hobbies" data-title="Adobo" data-desc="A marketing site for a fintech startup." onclick="openProject(this)">
+          <div class="thumb"></div>
+          <div class="meta"><div style="font-weight:700">Surfing</div><div class="small muted">Since 2021</div></div>
+        </div>
+
+        <div class="card" data-tags="hobbies" data-title="Mobile App UI" data-desc="Design system and UI kit for a mobile social app." onclick="openProject(this)">
+          <div class="thumb"></div>
+          <div class="meta"><div style="font-weight:700">Playing Games</div><div class="small muted"></div></div>
+        </div>
+
+        <div class="card" data-tags="branding" data-title="Nike" data-desc="Branding and packaging for an indie cafe." onclick="openProject(this)">
+          <div class="thumb"></div>
+          <div class="meta"><div style="font-weight:700">Nike</div><div class="small muted">Brand • 2023</div></div>
+        </div>
+
+        <div class="card" data-tags="games" data-title="E-commerce Revamp" data-desc="Conversion-focused e-commerce redesign." onclick="openProject(this)">
+          <div class="thumb"></div>
+          <div class="meta"><div style="font-weight:700">Counter Strike</div><div class="small muted">CSGO • 2012</div></div>
+        </div>
+
+        <div class="card" data-tags="games" data-title="Portfolio Theme" data-desc="Theme for creative portfolios." onclick="openProject(this)">
+          <div class="thumb"></div>
+          <div class="meta"><div style="font-weight:700">Call of Duty: Mobile</div><div class="small muted">CODM • 2019</div></div>
+        </div>
+
+        <div class="card" data-tags="branding" data-title="Event Identity" data-desc="Visual identity for a community event." onclick="openProject(this)">
+          <div class="thumb"></div>
+          <div class="meta"><div style="font-weight:700">Puma</div><div class="small muted">Brand • 2022</div></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <div class="section-title"><h2>About</h2><div class="space"></div><div class="small muted">A little about me</div></div>
+      <div style="display:grid;grid-template-columns:1fr 360px;gap:28px;align-items:start">
+        <div>
+          <p class="muted">From Palnab Del Sur, Virac Catanduanes. I'm 19 and I am studying Information Technology at Catanduanes State University</p>
+
+          <h3 style="margin-top:18px">Skills</h3>
+          <div class="skills" style="margin-top:8px">
+            <div class="skill">HTML5</div>
+            <div class="skill">CSS3</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">C SHARP</div>
+            <div class="skill">PYTHON</div>
+            <div class="skill">C</div>
+          </div>
+
+          <h3 style="margin-top:18px">Approach</h3>
+          <p class="muted">Dont Approach me.</p>
+        </div>
+
+        <aside style="background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:18px;border-radius:12px;border:1px solid rgba(255,255,255,0.03)">
+          <div style="font-weight:800">Contact Info</div>
+          <div class="small muted" style="margin-top:8px">Email: rayparkerlumbao@gmail.com</div>
+          <div class="small muted">Location: Virac, Catanduanes, PH</div>
+          <div style="margin-top:12px"><a class="chip">Download CV</a></div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section id="achievements">
+    <div class="container">
+      <div class="section-title"><h2>Achievements</h2><div class="space"></div><div class="small muted">Highlights</div></div>
+      <div class="ach-grid">
+        <div class="achievement">
+          <div style="font-weight:800">Top 500 Leaderboard</div>
+          <div class="small muted">Call Of Duty: Mobile</div>
+        </div>
+        <div class="achievement">
+          <div style="font-weight:800">Mythical Immortal 20 Stars</div>
+          <div class="small muted">Mobile Legends: Bang Bang</div>
+        </div>
+        <div class="achievement">
+          <div style="font-weight:800">Mythic Rank</div>
+          <div class="small muted">BloodStrike</div>
+        </div>
+        <div class="achievement">
+          <div style="font-weight:800">Legendary Rank</div>
+          <div class="small muted">Call Of Duty: Mobile</div>
+        </div>
+        <div class="achievement">
+          <div style="font-weight:800">Top 1 Catanduanes Lunox</div>
+          <div class="small muted">Mobile Legends: Bang Bang</div>
+        </div>
+        <div class="achievement">
+          <div style="font-weight:800">NCII Holder</div>
+          <div class="small muted">Computer System Servicing</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <div class="section-title"><h2>Contact</h2><div class="space"></div><div class="small muted">Let's build something together</div></div>
+      <div class="contact-grid">
+        <form id="contactForm" onsubmit="return handleSubmit(event)">
+          <div class="field">
+            <label class="small muted">Name</label>
+            <input id="name" required placeholder="Your full name">
+          </div>
+          <div class="field">
+            <label class="small muted">Email</label>
+            <input id="email" type="email" required placeholder="buakafernan@example.com">
+          </div>
+          <div class="field">
+            <label class="small muted">Message</label>
+            <textarea id="message" rows="6" required placeholder="Tell me about your project"></textarea>
+          </div>
+          <div style="display:flex;gap:8px;align-items:center">
+            <button type="submit">Send Message</button>
+            <div id="formMsg" class="small muted"></div>
+          </div>
+        </form>
+
+        <aside style="background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:18px;border-radius:12px;border:1px solid rgba(255,255,255,0.03)">
+          <div style="font-weight:800">Quick Contact</div>
+          <div class="small muted" style="margin-top:8px">Email: rayparkerlumbao@gmail.com</div>
+          <div class="small muted">Phone: +63 981 027 5054</div>
+          <div style="margin-top:12px">Follow me on social links below.</div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">© <span id="year"></span> Ray Parker • ITRACKB1</div>
+</footer>
+
+
+<div class="modal" id="projectModal" aria-hidden="true">
+  <div class="modal-card">
+    <div style="display:flex;align-items:center;gap:12px">
+      <div style="font-weight:800" id="modalTitle">Project Title</div>
+      <div class="space"></div>
+      <button onclick="closeModal()" class="small">Close ✕</button>
+    </div>
+    <div style="margin-top:12px" id="modalDesc">Project description...</div>
+  </div>
+</div>
+
+<script>
+
+  const el = s => document.querySelector(s);
+  const els = s => Array.from(document.querySelectorAll(s));
+
+  
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  
+  const ham = document.querySelector('.hamburger');
+  ham.addEventListener('click', ()=>{
+    const ul = document.querySelector('nav ul');
+    if(ul.style.display === 'flex') ul.style.display = '';
+    else ul.style.display = 'flex';
+  })
+
+
+  els('a[href^="#"]').forEach(a=>{
+    a.addEventListener('click', e=>{
+      const href = a.getAttribute('href');
+      if(!href.startsWith('#')) return;
+      e.preventDefault();
+      const target = document.querySelector(href);
+      if(target) target.scrollIntoView({behavior:'smooth',block:'start'});
+
+      const ul = document.querySelector('nav ul'); if(window.innerWidth<880) ul.style.display='';
+    })
+  })
+
+  
+  const chips = els('.chip[data-filter]');
+  const projects = els('.card');
+  chips.forEach(c=>c.addEventListener('click', ()=>{
+    const f = c.dataset.filter;
+    chips.forEach(x=>x.style.background='var(--glass)');
+    c.style.background='linear-gradient(90deg,var(--accent),var(--accent-2))';
+    projects.forEach(p=>{
+      if(f==='all'){p.style.display='block';return}
+      const tags = p.dataset.tags.split(' ');
+      p.style.display = tags.includes(f)?'block':'none';
+    })
+  }))
+  
+  document.querySelector('.chip[data-filter="all"]').click();
+
+  function openProject(card){
+    const title = card.dataset.title || 'Untitled';
+    const desc = card.dataset.desc || '';
+    document.getElementById('modalTitle').textContent = title;
+    document.getElementById('modalDesc').textContent = desc;
+    const modal = document.getElementById('projectModal');
+    modal.classList.add('show'); modal.setAttribute('aria-hidden','false');
+  }
+  function closeModal(){
+    const modal = document.getElementById('projectModal');
+    modal.classList.remove('show'); modal.setAttribute('aria-hidden','true');
+  }
+  document.getElementById('projectModal').addEventListener('click', (e)=>{ if(e.target.id==='projectModal') closeModal(); })
+
+  
+  function handleSubmit(e){
+    e.preventDefault();
+    const name = el('#name').value.trim();
+    const email = el('#email').value.trim();
+    const msg = el('#message').value.trim();
+    const formMsg = el('#formMsg');
+    if(!name||!email||!msg){ formMsg.textContent='Please complete all fields.'; return false }
+    
+    formMsg.textContent = 'Sending...';
+    setTimeout(()=>{ formMsg.textContent = 'Thanks! I\'ll get back to you soon.'; el('#contactForm').reset(); }, 900);
+    return false;
+  }
+
+  
+  document.addEventListener('keydown', e=>{ if(e.key==='Escape') closeModal(); })
+</script>
+</body>
+</html>
